@@ -1,7 +1,6 @@
-# grocery-reorder-prediction-ml
 
 Title:
-Machine Learning Based Grocery Reorder Prediction
+# Machine Learning Based Grocery Reorder Prediction
 Overview:
 This project builds an end-to-end machine learning pipeline to predict whether a product will be reordered by a customer. The solution applies feature engineering, class imbalance handling, model comparison, and performance evaluation using ROC-AUC and business metrics.
 Business Problem:
