@@ -44,7 +44,17 @@ It is recommended that the Random Forest model be integrated into the organizati
 Implementation would require integrating the trained model into the company’s data processing pipeline. Transactional data would be processed in batch or real-time environments, and predicted probabilities would be stored within a business intelligence system accessible to marketing and operations teams. A governance framework should be established to oversee model updates, monitoring procedures, and compliance with privacy regulations.
 ## Ethical Assessment
 The use of customer behavioral data for predictive modeling raises ethical considerations regarding privacy, transparency, and fairness. Customer information must be anonymized and securely stored to prevent unauthorized access. Predictive insights should be used to enhance customer experience rather than manipulate purchasing behavior. Organizations must ensure that automated decision-making systems do not unintentionally disadvantage specific customer segments. Responsible data governance practices are essential to maintaining trust and ethical integrity.
-## Anticipated Audience Questions
-An informed audience may raise several important questions regarding this analysis. Stakeholders may ask why Random Forest was selected over other advanced ensemble techniques and whether additional algorithms were evaluated. Questions may arise concerning how class imbalance impacts evaluation metrics and whether alternative validation approaches were considered to ensure robustness.
-Decision-makers may inquire about the model's generalizability across different customer segments, geographic markets, or time periods. Business leaders may request clarification on how predicted reorder probabilities translate into measurable financial value and expected return on investment.
-Technical audiences may question how overfitting was mitigated and how model performance will be monitored over time to detect drift. Ethical considerations may also prompt questions regarding customer privacy protection, fairness in targeted marketing strategies, and transparency in automated decision-making systems.
+## Q&A – Answer 
+Below are polished answers to the six anticipated audience questions from Milestone 2.
+### Question 1: Why was Random Forest selected over other ensemble methods?
+Random Forest was selected due to its strong performance, robustness to overfitting, and interpretability through feature importance metrics. While gradient boosting methods may provide marginal performance improvements, Random Forest offers a strong balance between predictive accuracy and computational efficiency.
+### Question 2: How does class imbalance affect evaluation metrics?
+Class imbalance can inflate accuracy if the majority class dominates predictions. Therefore, additional metrics such as precision, recall, F1 score, and ROC-AUC were evaluated to ensure balanced performance assessment across both classes.
+### Question 3: How generalizable is this model?
+The model was validated using a separate test dataset to ensure generalization. However, performance may vary across different time periods or markets. Periodic retraining would be necessary to maintain stability.
+### Question 4: How do reorder probabilities translate to business value?
+Predicted reorder probabilities can segment customers by risk level. Customers with low predicted reorder likelihood can receive targeted promotions, improving retention and maximizing marketing return on investment.
+### Question 5: How was overfitting mitigated?
+Overfitting was mitigated through train-test splitting and evaluation on unseen data. Random Forest also inherently reduces overfitting by aggregating multiple decision trees.
+### Question 6: How are ethical concerns addressed?
+Customer data must be anonymized and securely stored. The model should be used to enhance customer experience rather than manipulate behavior. Fairness and transparency principles should guide deployment decisions.
