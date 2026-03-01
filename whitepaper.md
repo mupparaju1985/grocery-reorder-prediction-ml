@@ -12,11 +12,21 @@ The dataset used in this study consists of historical customer transaction recor
 Data preparation included removing duplicate records, validating data integrity, assessing missing values, and preparing features for modeling. Feature scaling was applied where appropriate to meet the assumptions of Logistic Regression. The dataset was partitioned into training and testing subsets to ensure unbiased performance evaluation.
 Exploratory analysis first examined the distribution of reordered versus non-reordered products to assess potential class imbalance. The visualization titled “Distribution of Reordered vs Non-Reordered Products” illustrates the relative proportions of each class. Understanding this distribution is essential because imbalanced datasets can distort accuracy metrics and require careful interpretation of precision and recall.
  
+<p align="center">
+  <img src="images/Distribution_of_Reordered_vs_Non-Reordered_Products.png" width="400">
+</p>
 
 Behavioral timing patterns were then evaluated by analyzing the distribution of days since the prior order. The figure titled “Distribution of Days Since Prior Order” demonstrates purchasing interval trends and provides insight into customer recency behavior. Recency is often a strong predictor of repeat purchase likelihood, and its distribution supports inclusion as a meaningful feature in predictive modeling.
+
+<p align="center">
+  <img src="images/Distribution_of_Days_Since_Prior_Order.png" width="400">
+</p>
  
 Correlation analysis was conducted to evaluate relationships among predictor variables and identify potential multicollinearity concerns. The “Feature Correlation Matrix” visualization illustrates the strength and direction of associations among behavioral variables. The matrix confirms that reorder rate exhibits a strong positive relationship with the target variable, validating its importance as a key predictor.
 
+<p align="center">
+  <img src="images/Feature_Correlation_Matrix.png" width="400">
+</p>
  
 ## Methods
 Two supervised classification models were developed and compared in this analysis. Logistic Regression was selected due to its interpretability and ability to generate probability estimates for binary outcomes. Random Forest was implemented as an ensemble learning method capable of capturing nonlinear patterns and reducing variance through aggregation of multiple decision trees.
@@ -24,8 +34,15 @@ Both models were trained using identical training and testing splits to ensure f
 ## Analysis
 Both models demonstrated meaningful predictive capability; however, Random Forest consistently outperformed Logistic Regression across evaluation metrics. The confusion matrix titled “Confusion Matrix – Random Forest” illustrates the model’s classification performance in terms of true positives, true negatives, false positives, and false negatives. The matrix indicates that the model effectively identifies reorder events while maintaining controlled misclassification rates.
 
+<p align="center">
+  <img src="images/Confusion_Matrix_Random_Forest.png" width="400">
+</p>
  
 Receiver Operating Characteristic analysis further evaluated classification performance across varying threshold values. The figure titled “ROC Curve Comparison” compares Logistic Regression and Random Forest performance. The ROC curve shows that Random Forest achieves a higher Area Under the Curve, indicating stronger discrimination and improved ability to distinguish between reordered and non-reordered products.
+
+<p align="center">
+  <img src="images/ROC_Curve_Comparison.png" width="400">
+</p>
  
 Feature importance analysis revealed that reorder rate is the most influential predictor variable in the Random Forest model. This finding aligns with established behavioral theory, which suggests that historical purchase repetition strongly predicts future buying behavior.
 ## Conclusion
