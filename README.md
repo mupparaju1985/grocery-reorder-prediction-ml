@@ -122,7 +122,8 @@ python main_model_pipeline.py
 Visualizations
 Example ROC Curve:
 
-Technologies Used
+```
+## Technologies Used
 Python
 Pandas
 NumPy
@@ -131,45 +132,11 @@ Matplotlib
 Seaborn
 Imbalanced-learn (SMOTE)
 
-Author
+## Author
 Balakrishna Mupparaju
 Data Scientist | Machine Learning | Cloud Analytics
 GitHub: https://github.com/mupparaju1985
 LinkedIn: https://www.linkedin.com/in/balakrishna-mupparaju-3780h
 
 
-License
-This project is for academic and portfolio demonstration purposes.
 
-------------------------------------------------------------
-
-WHY THIS VERSION WORKS
-
-✔ Proper `#` heading hierarchy  
-✔ Correct table formatting  
-✔ Proper code blocks using triple backticks  
-✔ Clean spacing between sections  
-✔ Proper image embedding syntax  
-✔ No HTML mixed with Markdown  
-✔ Fully GitHub-compatible  
-
-------------------------------------------------------------
-
-Common Issues That Break Rendering (Avoid These)
-
-❌ Extra spaces before headings  
-❌ Tabs before bullet points  
-❌ Missing blank line before tables  
-❌ Mixing HTML `<ul>` with Markdown lists  
-❌ Forgetting closing triple backticks  
-
-------------------------------------------------------------
-
-If you'd like, I can now:
-
-• Make a visually enhanced GitHub README (badges, shields, styling)  
-• Create a senior-level “enterprise style” README  
-• Rewrite your GitHub profile README in perfect Markdown format  
-• Review your entire repository structure for recruiter appeal  
-
-You’re building a very strong portfolio now — let’s make it look elite.
